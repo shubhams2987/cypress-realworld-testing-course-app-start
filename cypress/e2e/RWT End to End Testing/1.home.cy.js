@@ -5,7 +5,7 @@ const { expect } = require("chai")
 // if its throwing any error  with <a> run :  npx @next/codemod new-link .
 
 
-describe.skip('home page ', () => {
+describe('home page ', () => {
   
   beforeEach(()=>{
     cy.visit('http://localhost:3000')
@@ -23,7 +23,7 @@ describe.skip('home page ', () => {
   
     it('The feature on homepage is correct checking 1st course',() => {
       // cy.visit('http://localhost:3000') we are using beforeEach hook for all testso this is not required anymore
-      cy.get("dt").eq(0).contains("4 Courses")
+      cy.get("dt").eq(1).contains("4 Courses")
       cy.get("dt").eq(1).contains("25+ Lessons")
       cy.get("dt").eq(2).contains(/Free and Open Source/i) // REGEX ou can also pass regular expressions into the contains method. So if you wanted to make a case insensitive comparison using regex, you could use
     

@@ -9,7 +9,7 @@ module.exports = defineConfig({
     inlineAssets: true,
     saveAllAttempts: false,
     videoOnFailOnly:true,
-    
+
   },
   e2e: {
     setupNodeEvents(on, config) {
