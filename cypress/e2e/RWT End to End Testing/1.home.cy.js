@@ -45,7 +45,7 @@ describe('home page ', () => {
       // })
 
     })
-    //mo
+    //monday
 
     it('Testing your Testing Foundation',()=>{
       cy.getByData('course-1').find('a').contains('Get started').click()
